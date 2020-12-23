@@ -199,7 +199,8 @@ main {
           color: #000; }
 
 main .primary-btn {
-  color: #000; }
+  color: yellow;
+  content: ''; }
 
 .btn {
   background: #1C5EEC;

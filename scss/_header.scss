@@ -23,7 +23,8 @@
     } 
 }
 main .primary-btn{
-    color: #000;
+    color: yellow;
+    content: '';
 }
 .btn{
    @include btn($btnPrimaryBg, #fff, 12px, 20px); 
