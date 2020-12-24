@@ -3,65 +3,113 @@
 *:after{
     box-sizing: border-box;
 }
+
 body{
-    background: $backgroundColor;
-    color: #3c3c3c;
+    background: linear-gradient(to bottom, rgba(156,192,242,1) 24%,rgba(109,134,168,1) 67%,rgba(1,2,3,1) 95%);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
-main{
+
+button {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+}
+
+.main {
     display: flex;
-    width: 1000px;
-    height: calc(100vh - 100px);
-    background: #AAA94C;
-    margin: auto;
-    @include media('<=1000px') {
-        flex-direction: column;
-        width: 100%;
-        padding: 0 20px;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.block-holder {
+    height: 387px;
+    width: 300px;
+}
+
+.title {
+    font-size: $font-medium;
+    text-align: center;
+    padding: 27px 0 20px;
+    text-transform: uppercase;
+    border-radius: 9px 9px 0 0;
+    border-bottom: 1px solid #303d70;
+
+    &-1 {
+        @include title($bg-title-1, $border-title-1)
     }
     
-}
-.sidebar{
-    width: 400px;
-    background: #1C5EEC;
+    &-2 {
+        @include title($bg-title-2, $border-title-2)
+    }
     
-    p{
-        font-size: $font-small;
-        color:#000;
+    &-3 {
+        @include title($bg-title-3, $border-title-3)
     }
-    @include media('<=1000px') {
-        width: 100%;
-    }
-    @include media('<=640px') {
-        p{
-            font-size: $font-lg;
-        }
+    
+    &-4 {
+        @include title($bg-title-4, $border-title-4)
     }
 }
-.data{
-    width: 600px;
-    background: #AA8A4C;
-    p{
+
+.holder-content {
+    background: rgba($color: #ffffff, $alpha: .1);
+    border: 1px solid rgba($color: #4c5c75, $alpha: .1);
+    border-radius: 9px;
+    padding: 25px 0 0;
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 16px 0;
+    text-transform: uppercase;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-lg {
+        min-width: 249px;
         font-size: $font-medium;
-    }
-    @include media('<=1000px') {
-        width: 100%;
-    }
-    @include media('<=500px') {
-        p{
-            font-size: $font-lg;
-        }
+        padding: 25px 0 21px;
     }
     
-}
-
-
-.clearfix{
-    &:after{
-        content:'';
-        clear: both;
-        display: block;
+    &-sm {
+        min-width: 174px;
+        font-size: $font-small;
+        padding: 18px 0 14px;
+    }
+    
+    &-1 {
+        @include btn($bg-btn-1, $color-btn-1)
+    }
+    
+    &-2 {
+        @include btn($bg-btn-2, $color-btn-2)
+    }
+    
+    &-3 {
+        @include btn($bg-btn-3, $color-btn-3)
+    }
+    
+    &-4 {
+        @include btn($bg-btn-4, $color-btn-4)
     }
 }
-.someBackground{
-    background: green;
+
+.btn-lg {
+    min-width: 249px;
+    font-size: $font-medium;
+    padding: 25px 0 21px;
+}
+
+.location {
+    height: 145px;
 }

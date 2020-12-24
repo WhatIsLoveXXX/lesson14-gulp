@@ -1,7 +1,10 @@
-@mixin btn($bg, $color, $radius, $fs) {
+@mixin btn($bg, $color) {
     background: $bg;
     color: $color;
-    border-radius: $radius;
-    font-size: $fs;
-    padding: 10px;
+}
+
+@mixin title($bg, $bd, $color:white){
+    background: $bg;
+    color: $color;
+    border-top: 1px solid $bd;
 }
