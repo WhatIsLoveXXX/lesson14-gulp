@@ -139,7 +139,7 @@ body {
 button {
   display: block;
   font-family: 'Roboto', sans-serif;
-  border-radius: 6px; }
+  border-radius: 9px; }
 
 .main {
   display: flex;
@@ -147,16 +147,16 @@ button {
   padding-top: 50px; }
 
 .block-holder {
-  height: 387px;
+  height: 326px;
   width: 300px; }
 
 .title {
   font-size: 20px;
   text-align: center;
-  padding: 27px 0 20px;
+  padding: 22px 0 16px;
   text-transform: uppercase;
   border-radius: 9px 9px 0 0;
-  border-bottom: 1px solid #303d70; }
+  border-bottom: 1px solid #5368a6; }
   .title-1 {
     background: #6a92d8;
     color: white;
@@ -175,49 +175,50 @@ button {
     border-top: 1px solid #cbc8a8; }
 
 .holder-content {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(76, 92, 117, 0.1);
-  border-radius: 9px;
-  padding: 25px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 10px 10px;
+  padding: 23px 0 0;
   height: 100%; }
 
 .btn {
   display: block;
   font-family: 'Roboto', sans-serif;
-  border-radius: 6px;
   border: none;
   outline: none;
   margin: 0 auto;
-  margin-bottom: 10px;
-  padding: 16px 0;
   text-transform: uppercase; }
   .btn:last-child {
     margin-bottom: 0; }
   .btn-lg {
     min-width: 249px;
     font-size: 20px;
-    padding: 25px 0 21px; }
+    padding: 18px 0 17px;
+    margin-bottom: 10px; }
   .btn-sm {
     min-width: 174px;
     font-size: 14px;
-    padding: 18px 0 14px; }
+    padding: 14px 0 10px;
+    margin-bottom: 7px; }
   .btn-1 {
+    border-top: 1px solid #f2f2f2;
     background: #bdcde4;
     color: #8f5757; }
   .btn-2 {
+    border-top: 1px solid #93bbe2;
+    border-bottom: 1px solid #50629b;
     background: #678bcb;
     color: #711212; }
   .btn-3 {
+    border-top: 1px solid #a5d0e9;
+    border-bottom: 1px solid #4c5c95;
     background: #73add6;
     color: #e3f73a; }
   .btn-4 {
+    border-top: 1px solid #8fccbd;
+    border-bottom: 1px solid #47578d;
     background: #64a88e;
     color: #fff; }
 
-.btn-lg {
-  min-width: 249px;
-  font-size: 20px;
-  padding: 25px 0 21px; }
-
 .location {
-  height: 145px; }
+  height: 84px; }

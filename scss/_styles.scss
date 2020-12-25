@@ -13,7 +13,7 @@ body{
 button {
     display: block;
     font-family: 'Roboto', sans-serif;
-    border-radius: 6px;
+    border-radius: 9px;
 }
 
 .main {
@@ -23,17 +23,17 @@ button {
 }
 
 .block-holder {
-    height: 387px;
+    height: 326px;
     width: 300px;
 }
 
 .title {
     font-size: $font-medium;
     text-align: center;
-    padding: 27px 0 20px;
+    padding: 22px 0 16px;
     text-transform: uppercase;
     border-radius: 9px 9px 0 0;
-    border-bottom: 1px solid #303d70;
+    border-bottom: 1px solid #5368a6;
 
     &-1 {
         @include title($bg-title-1, $border-title-1)
@@ -53,22 +53,19 @@ button {
 }
 
 .holder-content {
-    background: rgba($color: #ffffff, $alpha: .1);
-    border: 1px solid rgba($color: #4c5c75, $alpha: .1);
-    border-radius: 9px;
-    padding: 25px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 0 0 10px 10px;
+    padding: 23px 0 0;
     height: 100%;
 }
 
 .btn {
     display: block;
     font-family: 'Roboto', sans-serif;
-    border-radius: 6px;
     border: none;
     outline: none;
     margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 16px 0;
     text-transform: uppercase;
 
     &:last-child {
@@ -78,38 +75,44 @@ button {
     &-lg {
         min-width: 249px;
         font-size: $font-medium;
-        padding: 25px 0 21px;
+        padding: 18px 0 17px;
+        margin-bottom: 10px;
     }
     
     &-sm {
         min-width: 174px;
         font-size: $font-small;
-        padding: 18px 0 14px;
+        padding: 14px 0 10px;
+        margin-bottom: 7px;
     }
     
     &-1 {
+        border-top: 1px solid #f2f2f2;
         @include btn($bg-btn-1, $color-btn-1)
     }
     
     &-2 {
+        border-top: 1px solid #93bbe2;
+        border-bottom: 1px solid #50629b;
         @include btn($bg-btn-2, $color-btn-2)
     }
     
     &-3 {
+        border-top: 1px solid #a5d0e9;
+        border-bottom: 1px solid #4c5c95;
         @include btn($bg-btn-3, $color-btn-3)
     }
     
     &-4 {
+        border-top: 1px solid #8fccbd;
+        border-bottom: 1px solid #47578d;
         @include btn($bg-btn-4, $color-btn-4)
     }
 }
 
-.btn-lg {
-    min-width: 249px;
-    font-size: $font-medium;
-    padding: 25px 0 21px;
+.location {
+    height: 84px;
 }
 
-.location {
-    height: 145px;
-}
+  
+  
